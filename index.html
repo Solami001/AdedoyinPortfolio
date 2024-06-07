@@ -19,6 +19,12 @@
         .carousel.active {
             display: block;
         }
+        .nav-link {
+            padding-bottom: 1px; /* Optional: to make space for the underline */
+        }
+        .nav-link.active {
+            border-bottom: 1px solid currentColor; /* Underline for active link */
+        }
     </style>
 </head>
 <body class="bg-[#000000] text-white m-0 p-0 w-full font-[montserrat]">
@@ -37,11 +43,11 @@
 
     <main class="mx-[5%]">
 
-        <section id="about" class="carousel active animate-pluse-slow">
-            <div class="carousel-item active">
-                <img src="./images/aiony-haust-3TLl_97HNJo-unsplash (1).jpg" alt="Adedoyin Akinsanya" class="lg:h-[46%] lg:w-[46%] lg:float-left" >
-                <div class="mb-4 lg:pt-[8px] lg:ml-[48%] sm:mt-[-50px] md:mt-[-120px]">
-                    <h2 class="text-2xl font-semibold mb-4 lg:pt-[100px]">About Me</h2>
+        <section id="about" class="carousel animate-pluse-slow">
+            <div class="lg:grid lg:grid-cols-2 active">
+                <img src="./images/ade.png" alt="Adedoyin Akinsanya" class="rounded-[390px]" >
+                <div class="mb-4 md:mt-[40px] mt-7 lg:mt-[80px]">
+                    <h2 class="text-2xl font-semibold mb-4">About Me</h2>
                     <p class="text-[13px] md:text-[15px] lg:text-[14px] pb-3 lg:pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur delectus architecto temporibus, maxime officia similique vitae? Eius ea iusto fuga ipsam alias dolores veniam deserunt perferendis ratione culpa. Sed facere cumque ratione quisquam eius.</p>
                     <p class="text-[13px] md:text-[15px] lg:text-[14px]"> accusantium eaque incidunt consectetur suscipit saepe velit doloremque perferendis earum praesentium fugit aliquid veniam iure error amet placeat at, odit voluptates vel! Ratione reprehenderit explicabo, enim, impedit et assumenda voluptates pariatur, tempore earum necessitatibus debitis sequi fugit cupiditate dicta ipsam! Deleniti saepe obcaecati quae rerum porro, culpa enim aliquam deserunt earum iusto cumque asperiores. Ea beatae laborum ipsam, tempora omnis delectus perspiciatis velit nam repellendus.</p>
                     <button class="border-dotted border-[2px] border-[#d17fcd] text-[12px] md:text-[14px] lg:text-[14px] p-1 mt-2">Hire ME</button>
@@ -75,20 +81,30 @@
 
 
 
-        <section id="hireme" class="carousel animate-pluse-slow">
-            <div class="carousel-item active">
-                <h2 class="text-2xl font-semibold mb-4">Hire Me</h2>
-                <p>Contact details and hiring information.</p>
+        <section id="hireme" class="carousel animate-pluse-slow  active">
+            <div class="lg:grid lg:grid-cols-9 mt-">
+                <div class="carousel-item active col-span-4">
+                    <h2 class="text-[22px] font-semibold mb-4 gradient-text1">Do you need a Frontend Developer or a Designer ?</h2>
+                    <p>Contact details and hiring information.</p>
+                </div>
+                <div class="relative col-span-5 mt-9 mb-5 border-solid border-[#d17fcd] border-[1px] h-[500px]">
+                    <div class="absolute inset-0 border-solid border-[#a8d6d6] border-[1px] h-[98.9%] w-[99.2%] mx-auto my-auto ">
+                        
+                    </div>
+                        
+                </div>
+                </div>
             </div>
+
         </section>
 
 
 
     </main>
 
-   <footer>
-    <div class="text-center ">Contact us</div>
-   </footer>
+   <!-- <footer>
+    <div class="text">Contact us</div>
+   </footer> -->
 
     <script src="script.js"></script>
 </body>

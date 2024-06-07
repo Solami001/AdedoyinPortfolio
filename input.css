@@ -32,6 +32,10 @@ body {
       @apply bg-clip-text text-transparent;
       background-image: linear-gradient(to right, #a8d6d6, #d17fcd);
     }
+    .gradient-text1 {
+      @apply bg-clip-text text-transparent;
+      background-image: linear-gradient(to right, #f0e8ef, #cce3e3, #d17fcd);
+    }
   }
 
   /* #about{
